@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewNoticeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sky_background"
+        android:foreground="@drawable/blackforeground"/>
+
+
+
+    <ImageView
+        android:id="@+id/isellImage"
+        android:layout_width="75dp"
+        android:layout_height="86dp"
+        android:layout_above="@+id/registerboard"
+        android:layout_alignStart="@+id/registerboard"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/he_say_sell_item" />
+
+    <ImageView
+        android:src="@drawable/he_say_buy_item"
+        android:layout_width="75dp"
+        android:layout_height="86dp"
+        android:layout_above="@id/registerboard"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/isellImage"/>
+
+    <LinearLayout
+        android:id="@+id/registerboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bullettin_board_layout"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+        <!-- REGISTER BOARD TEXT  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bullettin_board_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardyellowcolor"
+                android:text="@string/addNotice"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+
+                <!--- CATEGORY spın -->
+                <LinearLayout
+                    android:id="@+id/notice_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensansbold"
+                        android:text="@string/importantnotice"
+                        android:textSize="19sp"
+                        android:textColor="@color/red"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+        <!--- CATEGORY spın -->
+        <LinearLayout
+            android:id="@+id/category_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardyellowcolor"
+                android:layout_gravity="center"
+                android:src="@drawable/price_icon"/>
+
+            <Spinner
+                android:id="@+id/category_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bullettin_board_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="7dp"
+                android:popupBackground="@drawable/bullettin_board_edittext"
+                android:textColorHint="#CACACA"
+                android:fontFamily="@font/opensansbold"
+                android:inputType="textFilter"
+                />
+
+        </LinearLayout>
+        <!--- SELL/BUY spın -->
+        <LinearLayout
+            android:id="@+id/buysell_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardyellowcolor"
+                android:layout_gravity="center"
+                android:src="@drawable/price_icon"/>
+
+            <Spinner
+                android:id="@+id/buysell_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bullettin_board_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="7dp"
+                android:popupBackground="@drawable/bullettin_board_edittext"
+                android:textColorHint="#CACACA"
+                android:fontFamily="@font/opensansbold"
+                android:inputType="textFilter"
+                />
+
+        </LinearLayout>
+
+        <!-- WORLD NAME -->
+        <LinearLayout
+            android:id="@+id/worldname_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardyellowcolor"
+                android:layout_gravity="center"
+                android:src="@drawable/main_world"/>
+
+            <EditText
+                android:id="@+id/worldname_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bullettin_board_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:digits="ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefgğhıijklmnoöprsşqtuüvwxyz1234567890"
+                android:text=""
+                android:hint="@string/worldnametext"
+                android:textColorHint="#CACACA"
+                android:fontFamily="@font/opensansbold"
+                android:inputType="textFilter"
+                />
+
+        </LinearLayout>
+
+        <!-- ITEM NAME -->
+        <LinearLayout
+                android:id="@+id/itemname_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:textColor="@color/boardyellowcolor"
+                    android:layout_gravity="center"
+                    android:src="@drawable/item_what_icon"/>
+
+                <EditText
+                    android:id="@+id/itemname_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bullettin_board_edittext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/boardwhitecolor"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:digits="ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefgğhıijklmnoöprsşqtuüvwxyz1234567890 "
+                    android:text=""
+                    android:hint="@string/itemnametext"
+                    android:textColorHint="#CACACA"
+                    android:fontFamily="@font/opensansbold"
+                    android:inputType="textFilter"
+                    />
+
+            </LinearLayout>
+        <!-- PRICE -->
+        <LinearLayout
+                android:id="@+id/price_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:textColor="@color/boardyellowcolor"
+                    android:layout_gravity="center"
+                    android:src="@drawable/price_icon"/>
+
+                <EditText
+                    android:id="@+id/price_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bullettin_board_edittext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/boardwhitecolor"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:digits="ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefgğhıijklmnoöprsşqtuüvwxyz1234567890/- "
+                    android:text=""
+                    android:hint="@string/priceText"
+                    android:textColorHint="#CACACA"
+                    android:fontFamily="@font/opensansbold"
+                    android:inputType="textFilter"
+                    />
+
+            </LinearLayout>
+
+
+        <!-- BUTTON'S -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="8dp"
+                android:layout_marginTop="3dp"
+                app:backgroundTint="@color/boardacceptcolor"
+                android:text="@string/addok"
+                android:textAllCaps="false"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="8dp"
+                app:backgroundTint="@color/boardcancelcolor"
+                android:text="@string/canceltext"
+                android:textAllCaps="false"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

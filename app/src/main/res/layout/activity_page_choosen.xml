@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PageChoosenActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/choosen_background"
+        android:scaleType="centerCrop"
+        android:foreground="@drawable/blackforeground"/>
+
+    <LinearLayout
+        android:id="@+id/registerboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensansbold"
+                    android:textColor="@color/boardyellowcolor"
+                    android:text="Growtopia\nMarketplace"
+                    style="@style/TextShadowStyle"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/goLoginPage"
+                    android:layout_width="200dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    app:cornerRadius="10dp"
+                    android:background="@drawable/bullettin_board_edittext"
+                    app:backgroundTint="@color/boardpurplecolor"
+                    android:text="@string/loginbuttonstart"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/opensansbold"
+                    android:textColor="@color/boardwhitecolor"
+                    android:textSize="22sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/goRegisterPage"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cornerRadius="10dp"
+                    android:background="@drawable/bullettin_board_edittext"
+                    app:backgroundTint="@color/boardpurplecolor"
+                    android:text="@string/registerbuttonstart"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/opensansbold"
+                    android:textColor="@color/boardwhitecolor"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

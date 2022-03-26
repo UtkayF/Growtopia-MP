@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bullettin_board_layout"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp">
+
+        <!-- REGISTER BOARD TEXT  -->
+        <LinearLayout
+            android:id="@+id/profileLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:src="@android:color/transparent"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/boardyellowcolor"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="9dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="9dp"/>
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardyellowcolor"
+                android:text="@string/usertext"
+                style="@style/TextShadowStyle"
+                android:textSize="19sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:id="@+id/ic_admin_symbol"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_admin_golden"
+                android:visibility="gone"
+                android:layout_marginLeft="7dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/more_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/more_button"
+                    android:padding="7dp"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- PRICE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/item_what_icon"
+                />
+
+            <TextView
+                android:id="@+id/itemnameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bullettin_board_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:hint="@string/itemnametext"
+                android:textColorHint="#CACACA"
+                android:fontFamily="@font/opensansbold" />
+
+        </LinearLayout>
+
+        <!-- PRICE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/price_icon"
+                />
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bullettin_board_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:hint="@string/priceTextNone"
+                android:textColorHint="#CACACA"
+                android:fontFamily="@font/opensansbold" />
+
+        </LinearLayout>
+
+        <!-- Main WORLD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/main_world"
+                />
+
+            <TextView
+                android:id="@+id/worldnameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bullettin_board_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:hint="@string/worldnametext"
+                android:textColorHint="#CACACA"
+                android:fontFamily="@font/opensansbold" />
+
+        </LinearLayout>
+
+        <!-- TIME -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/time_icon"
+                />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bullettin_board_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:hint="@string/timeText"
+                android:textColorHint="#CACACA"
+                android:fontFamily="@font/opensansbold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/youcanReach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensansbold"
+            android:textColor="@color/boardyellowcolor"
+            android:text="@string/youcanre"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="14dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

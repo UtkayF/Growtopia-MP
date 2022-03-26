@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/choosen_background"
+        android:foreground="@drawable/blackforeground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bullettin_board_layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/bullettin_board_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/opensansbold"
+                            android:textColor="@color/boardyellowcolor"
+                            android:text="@string/userinformation"
+                            android:textSize="19sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleProfileImage"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/profile_image_starter"
+                    app:civ_border_color="@color/boardyellowcolor"
+                    app:civ_border_width="1.5dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/circleProfileImageText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/boardyellowcolor"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/clickforprofilephoto"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/opensansbold"/>
+
+
+                    <!-- GROW ID -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginRight="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/grow_head"
+                            />
+
+                        <EditText
+                            android:id="@+id/growid_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bullettin_board_edittext"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="@color/boardwhitecolor"
+                            android:textSize="16sp"
+                            android:singleLine="true"
+                            android:digits="ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefgğhıijklmnoöprsşqtuüvwxyz1234567890._"
+                            android:text=""
+                            android:hint="@string/exampleusername"
+                            android:textColorHint="#CACACA"
+                            android:fontFamily="@font/opensansbold"
+                            android:inputType="textFilter" />
+
+                    </LinearLayout>
+
+                    <!-- Main WORLD -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginRight="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/main_world"
+                            />
+
+                        <EditText
+                            android:id="@+id/mainworld_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bullettin_board_edittext"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="@color/boardwhitecolor"
+                            android:textSize="16sp"
+                            android:singleLine="true"
+                            android:digits="ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefgğhıijklmnoöprsşqtuüvwxyz1234567890"
+                            android:text=""
+                            android:hint="@string/worldname"
+                            android:textColorHint="#CACACA"
+                            android:fontFamily="@font/opensansbold"
+                            android:inputType="textFilter" />
+
+                    </LinearLayout>
+
+
+                    <!-- Instagram -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginRight="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/instagram"
+                            />
+
+                        <EditText
+                            android:id="@+id/instagram_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bullettin_board_edittext"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="@color/boardwhitecolor"
+                            android:textSize="16sp"
+                            android:singleLine="true"
+                            android:digits="ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefgğhıijklmnoöprsşqtuüvwxyz1234567890._"
+                            android:text=""
+                            android:hint="@string/instaexampleuser"
+                            android:textColorHint="#CACACA"
+                            android:fontFamily="@font/opensansbold"
+                            android:inputType="textFilter" />
+
+                    </LinearLayout>
+
+
+                    <!-- Telegram -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginRight="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/telegram"
+                            />
+
+                        <EditText
+                            android:id="@+id/telegram_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bullettin_board_edittext"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="@color/boardwhitecolor"
+                            android:textSize="16sp"
+                            android:singleLine="true"
+                            android:digits="ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefgğhıijklmnoöprsşqtuüvwxyz1234567890._"
+                            android:text=""
+                            android:hint="@string/telegramexampleuser"
+                            android:textColorHint="#CACACA"
+                            android:fontFamily="@font/opensansbold"
+                            android:inputType="textFilter" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="right">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/cancelButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:cornerRadius="8dp"
+                            app:backgroundTint="@color/boardcancelcolor"
+                            android:text="@string/canceltext"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/opensansbold"
+                            android:textColor="@color/boardwhitecolor"
+                            android:textSize="18sp"
+                            android:layout_marginRight="10dp"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/changeButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:cornerRadius="8dp"
+                            app:backgroundTint="@color/boardacceptcolor"
+                            android:text="@string/changeText"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/opensansbold"
+                            android:textColor="@color/boardwhitecolor"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+</RelativeLayout>

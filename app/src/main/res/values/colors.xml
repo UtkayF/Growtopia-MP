@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#1799cf</color>
+    <color name="purple_700">#1799cf</color>
+    <color name="teal_200">#F9CE03</color>
+    <color name="teal_700">#F9CE03</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="boardincolor">#D3387DA8</color>
+    <color name="boardoutcolor">#86B8CB</color>
+    <color name="boardyellowcolor">#FCE6BA</color>
+    <color name="boardwhitecolor">#FFFFFF</color>
+
+    <color name="boardacceptcolor">#92B8C1</color>
+    <color name="boardentercolor">#577784</color>
+    <color name="boardcancelcolor">#F9CE03</color>
+
+    <color name="startbuttoncolor">#A5E3FB</color>
+    <color name="navbarColor">#FFFFFF</color>
+    <color name="boardpurplecolor">#783A88</color>
+    <color name="red">#DA0F00</color>
+
+</resources>

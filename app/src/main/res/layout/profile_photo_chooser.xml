@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    android:background="@android:color/transparent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bullettin_board_layout"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <!-- PHOTO BOARD TEXT  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bullettin_board_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardyellowcolor"
+                android:text="@string/profilechooser"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensansbold"
+            android:textColor="@color/boardyellowcolor"
+            android:text="@string/clickonaphotoyouwant"
+            android:textSize="17sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="7dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:layout_gravity="center_horizontal">
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile0_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_image_starter"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile1_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_1"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile2_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_2"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile3_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_3"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile5_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_5"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile6_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_6"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile7_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_7"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile8_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_8"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile9_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_9"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile10_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_10"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile11_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_11"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile12_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_12"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile13_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_13"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"/>
+
+             <ImageButton
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/profile14_ImageButton"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:src="@drawable/profile_14"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bullettin_board_layout"
+                 android:padding="5dp"
+                 android:layout_marginBottom="10dp"/>
+
+         </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+            <Button
+                android:id="@+id/changeBButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="8dp"
+                android:layout_marginTop="3dp"
+                app:backgroundTint="@color/boardacceptcolor"
+                android:text="@string/changeText"
+                android:textAllCaps="false"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardwhitecolor"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="18sp" />
+
+        <Button
+                android:id="@+id/cancelBButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="8dp"
+                app:backgroundTint="@color/boardcancelcolor"
+                android:text="@string/canceltext"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="8dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

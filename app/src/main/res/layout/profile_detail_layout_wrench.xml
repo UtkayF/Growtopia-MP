@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bullettin_board_layout"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <!-- REGISTER BOARD TEXT  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bullettin_board_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardyellowcolor"
+                android:text=""
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensansbold"
+            android:textColor="@color/boardyellowcolor"
+            android:text="@string/commo"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <!-- Main WORLD -->
+        <LinearLayout
+            android:id="@+id/mainworld_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/main_world"
+                />
+
+            <TextView
+                android:id="@+id/mainworld_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bullettin_board_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+
+                android:textColorHint="#CACACA"
+                android:fontFamily="@font/opensansbold"
+                android:inputType="textFilter" />
+
+        </LinearLayout>
+
+
+        <!-- Instagram -->
+        <LinearLayout
+            android:id="@+id/instagram_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/instagram"
+                />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/instagram_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bullettin_board_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:text=""
+
+                android:textColorHint="#CACACA"
+                android:fontFamily="@font/opensansbold"
+                android:inputType="textFilter" />
+
+        </LinearLayout>
+
+
+        <!-- Telegram -->
+        <LinearLayout
+            android:id="@+id/telegram_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/telegram"
+                />
+
+            <TextView
+                android:id="@+id/telegram_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bullettin_board_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text=""
+
+                android:textColorHint="#CACACA"
+                android:fontFamily="@font/opensansbold"
+                android:inputType="textFilter" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/itsLookEmptyText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/boardyellowcolor"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/whooshemptylook"
+            android:hint="@string/telegramexampleuser"
+            android:fontFamily="@font/opensansbold"
+            android:inputType="textFilter" />
+
+
+        <!-- BUTTON'S -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="8dp"
+                android:layout_marginTop="3dp"
+                app:backgroundTint="@color/boardacceptcolor"
+                android:text="@string/editbuttonText"
+                android:textAllCaps="false"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="8dp"
+                android:layout_marginTop="3dp"
+                app:backgroundTint="@color/boardpurplecolor"
+                android:text="@string/logoutButtonText"
+                android:textAllCaps="false"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/boardwhitecolor"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

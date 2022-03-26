@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name" translatable="false">Growtopia Marketplace</string>
+
+    <string-array name="categories">
+        <item>@string/choosenCategories</item>
+        <item>@string/blockType</item>
+        <item>@string/seedType</item>
+        <item>@string/worldType</item>
+        <item>@string/dailyquestType</item>
+        <item>@string/servicesType</item>
+        <item>@string/storesType</item>
+        <item>@string/packsType</item>
+        <item>@string/rentType</item>
+        <item>@string/utilitiesType</item>
+        <item>@string/bfgType</item>
+        <item>@string/clothesType</item>
+        <item>@string/surgeryType</item>
+        <item>@string/fishingType</item>
+        <item>@string/iotmType</item>
+        <item>@string/festivalType</item>
+    </string-array>
+
+    <string-array name="buysellArray">
+        <item>@string/choosen</item>
+        <item>@string/sellText</item>
+        <item>@string/buyText</item>
+    </string-array>
+
+    <string name="buyText">Buy</string>
+    <string name="sellText">Sell</string>
+
+    <string name="blockType">Block</string>
+    <string name="seedType">Seed</string>
+    <string name="worldType">World</string>
+    <!-- Daily Quest here but last comment. -->
+    <string name="servicesType">Services</string>
+    <string name="storesType">Stores</string>
+    <string name="packsType">Packs</string>
+    <string name="rentType">Rent</string>
+    <string name="utilitiesType">Utilities</string>
+    <string name="bfgType" translatable="false">BFG</string>
+    <string name="clothesType">Clothes</string>
+    <string name="surgeryType">Surgery</string>
+    <string name="fishingType">Fishing</string>
+    <string name="iotmType">IOTM</string>
+    <string name="festivalType">Festival</string>
+
+    <string name="registertext">Register Board</string>
+    <string name="emailtext">Email</string>
+    <string name="examplegmail">Example@gmail.com</string>
+    <string name="passwordtext">Password</string>
+    <string name="examplepassword">Password</string>
+    <string name="passwordverifytext">Password Verify</string>
+    <string name="getmyaccount">Get My ACCOUNT!</string>
+    <string name="gologin">Go LOGIN!</string>
+    <string name="ihaveanaccount">I have an account!</string>
+    <string name="idonthaveanaccount">I do not have an account!</string>
+    <string name="logintext">Login Board</string>
+    <string name="loginbuttontext">CONNECT</string>
+    <string name="donotleave">Do not leave any blank!</string>
+    <string name="passwordmustbe6">Password must be at least 6 characters!</string>
+    <string name="invalidemail">Invalid e-mail address!</string>
+    <string name="notmatchpassword">Passwords do not match!</string>
+    <string name="emailadressisused">Email address is used.</string>
+    <string name="afewproblems">A few problems occurred.</string>
+    <string name="iforgotpassword">I forgot my password!</string>
+    <string name="finalsteps">Final Steps</string>
+    <string name="usertext">Username</string>
+    <string name="exampleusername" translatable="false">GrowID</string>
+    <string name="youcanuseaz">For username can use A-Z, a-z, 0-9, ._  If the length is 1-13</string>
+    <string name="tocommo">Your communication:</string>
+    <string name="commo">Communication:</string>
+    <string name="imready">READY!</string>
+    <string name="instaexampleuser" translatable="false">warnstudio</string>
+    <string name="worldname">Main World Name</string>
+    <string name="telegramexampleuser">Telegram Username</string>
+    <string name="thispartcanbeleftblank">(Optionally.)</string>
+    <string name="werecommend">We recommend that you have a bulettin board in your world so that the purchaser can communicate with you.</string>
+    <string name="bosbirakilamaz">Username cannot be left blank!</string>
+    <string name="bosbirakilamaz2">Email cannot be left blank!</string>
+    <string name="usingusername">Username is already in use!</string>
+    <string name="emailorpasswordincorrect">Email Address or Password is incorrect!</string>
+    <string name="forgottext">Forgot Board</string>
+    <string name="forgotbuttontext">REMEMBER!</string>
+    <string name="ifyouhaveanaccout">If you have an account, we will send a password reset instruction to your email address.</string>
+    <string name="gosendmailadress">Successful, we have sent it to your email address!</string>
+    <string name="loginbuttonstart">Login</string>
+    <string name="registerbuttonstart">Register</string>
+    <string name="suspendedmessage">Your account has been closed due to complaints.</string>
+    <string name="hellotext">Welcome,</string>
+    <string name="block">Block</string>
+    <string name="seed">Seed</string>
+    <string name="world">World</string>
+    <string name="services">Services</string>
+    <string name="stores">Stores</string>
+    <string name="packs">Packs</string>
+    <string name="rent">Rent</string>
+    <string name="utilities">Utilities</string>
+    <string name="BFG" translatable="false">BFG</string>
+    <string name="Clothes">Clothes</string>
+    <string name="Surgery">Surgery</string>
+    <string name="Fishing">Fishing</string>
+    <string name="IOTM">IOTM</string>
+    <string name="Festival">Festival</string>
+    <string name="categoriesText">Categories</string>
+    <string name="Sell">Sell</string>
+    <string name="Buy">Buy</string>
+    <string name="Itemsell">On Sale</string>
+    <string name="Itembuy">Will Buy</string>
+    <string name="editbuttonText">Edit Profile!</string>
+    <string name="oktext">Okay</string>
+    <string name="whooshemptylook">Whoosh! It looks empty...</string>
+    <string name="commos">Click for contact...</string>
+    <string name="telegramlinkuser" translatable="false">https://t.me/</string>
+    <string name="instagramlinkuser" translatable="false">https://www.instagram.com/</string>
+    <string name="searchUserHint">Search...</string>
+    <string name="logoutButtonText">Logout</string>
+    <string name="userinformation">User Information</string>
+    <string name="canceltext">Cancel</string>
+    <string name="changeText">Change</string>
+    <string name="clickforprofilephoto">Click for profile picture!</string>
+    <string name="profilechooser">Photo Board</string>
+    <string name="clickonaphotoyouwant">Click on a photo you want.</string>
+    <string name="categoriesTextBoard">Categories Board</string>
+    <string name="itemonsale">Items on sale!</string>
+    <string name="itemonbuy">Items on buy!</string>
+    <string name="noticeTextView">Latest 5 User!</string>
+    <string name="addNotice">Add Board</string>
+    <string name="worldnametext">World Name</string>
+    <string name="addok">Add</string>
+    <string name="itemnametext">Item Name</string>
+    <string name="priceText">Price e.g 100/1 WL</string>
+    <string name="choosenCategories">Choose category!</string>
+    <string name="choosen">Choose Buy/Sell</string>
+    <string name="importantnotice">IMPORTANT! Fake or troll postings will be removed! (ONLY ENGLISH)</string>
+    <string name="succes">Successful...</string>
+    <string name="advertText">Advert</string>
+    <string name="priceTextNone">Price</string>
+    <string name="timeText">Date</string>
+    <string name="youcanre">You can reach me on my profile!</string>
+    <string name="editText">Edit</string>
+    <string name="deleteText">Delete</string>
+    <string name="reportText">Report</string>
+    <string name="bringadvert">Bring advert!</string>
+    <string name="dailyquestType">Daily Quest</string>
+    <string name="dailyquestText">Daily Quest</string>
+    <string name="waitforsec">Wait...</string>
+    <string name="worldnamebos">World name is empty.</string>
+    <string name="itemnamebos">Item name is empty.</string>
+    <string name="categorybos">Category is empty.</string>
+    <string name="sellbuybos">Sell/Buy is empty.</string>
+    <string name="pricebos">Price is empty.</string>
+    <string name="againopen">Your registration is complete. Restart the app for your safety!</string>
+
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "41800293733",
+    "project_id": "growtopiamarketplace01-10-2021",
+    "storage_bucket": "growtopiamarketplace01-10-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41800293733:android:36a8b14c9bcf557ba2958c",
+        "android_client_info": {
+          "package_name": "com.warnstudio.growtopiamarketplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41800293733-47scjsbpjvm16pqg8ddcu70pf4ftgv5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZCKK92L47bKc7iTfa1w9l694pDvtzgxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41800293733-47scjsbpjvm16pqg8ddcu70pf4ftgv5j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
